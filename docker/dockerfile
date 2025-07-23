@@ -1,0 +1,5 @@
+FROM  Ubuntu:22.04
+COPY . /app
+EXPOSE 8080
+RUN '''.sh'''
+CMD ["echo", ".sh"]
