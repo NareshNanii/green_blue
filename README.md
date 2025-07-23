@@ -8,6 +8,14 @@ REQUIREMENT:
 
 #docker
 created dockerfile where it takes base image from ubuntu and run bash scripts
+# Docker commands:
+
+docker pull "imagename"
+docker push repo/nameofrepo
+docker build.
+docker run "imagename"
+docker exec "comntainername" .sh
+
 
 #terrafrom
 
