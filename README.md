@@ -17,6 +17,6 @@ docker run "imagename"
 docker exec "comntainername" .sh
 
 
-#terrafrom
+# terrafrom
 
 Created terraform template where it implements 2 instances with tag as prod 
