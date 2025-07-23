@@ -6,7 +6,7 @@ REQUIREMENT:
 # Terraform
 # Ansible
 
-#docker
+# docker
 created dockerfile where it takes base image from ubuntu and run bash scripts
 # Docker commands:
 
