@@ -18,4 +18,4 @@ docker push repo/nameofrepo
 
 # terrafrom
 
-Created terraform template where it implements 2 instances with tag as prod 
+Created terraform template where it implements 2 instances with tag as prod and instance_type as t2.micro
