@@ -1,5 +1,12 @@
-FROM  Ubuntu:22.04
+FROM ubuntu:22.04
+
+WORKDIR /app
+
 COPY . /app
+
+RUN apt-get update && apt-get install -y bash curl \
+  && chmod +x start.sh
+
 EXPOSE 8080
-RUN '''.sh'''
-CMD ["echo", ".sh"]
+
+CMD ["./start.sh"]
