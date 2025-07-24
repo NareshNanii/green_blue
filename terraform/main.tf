@@ -1,27 +1,24 @@
-proveder aws {
-  region =  "us-east-1a"
+provider "aws" {
+  region = "us-east-1"  
 }
 
-resource"aws_instace" "aws_1"{
-    ami = "xxxxx"
-    key_name = "yyy"
-    sg - "rrrrr"
-    instance_type = "t2.micro"
-
-    tag{
-
-        name = prod
-    }
+resource "aws_instance" "aws_1" {
+  ami                    = "xxxxx"
+  instance_type          = "t2.micro"
+  key_name               = "yyy"
+  vpc_security_group_ids = ["rrrrr"] 
+  tags = {
+    Name = "prod"
+  }
 }
 
-resource  "aws_instace" "aws_2"{
-    ami = "xxxxx"
-    key_name = "yyy"
-    sg - "rrrrr"
-    instance_type = "t2.micro"
+resource "aws_instance" "aws_2" {
+  ami                    = "xxxxx"
+  instance_type          = "t2.micro"
+  key_name               = "yyy"
+  vpc_security_group_ids = ["rrrrr"]
 
-    tag{
-
-        name = prod
-    }
+  tags = {
+    Name = "prod"
+  }
 }
